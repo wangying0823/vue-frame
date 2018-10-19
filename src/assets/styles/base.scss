@@ -1,0 +1,62 @@
+// html {
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+//   color: #454545;
+//   font-family: 'Helvetica Neue',Tahoma,Arial,PingFangSC-Regular,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
+//   line-height: 1.2;
+// }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  // font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+html{
+  // font-size:65.5%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body{
+  font-family: -apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;
+  //修复iPhoneX add by wwj 2018-05-12 15:05:29
+  // padding-top: constant(safe-area-inset-top);
+  // padding-left: constant(safe-area-inset-left);
+  // padding-right: constant(safe-area-inset-right);
+  // padding-bottom: constant(safe-area-inset-bottom);
+}
+
+
+img{
+  max-width:100%;
+  object-fit: cover;//黑魔法
+}
+
+.clearfix:before,
+.clearfix:after{
+  display: table;
+  content: " ";
+}
+.clearfix:after{
+  clear: both;
+}
+

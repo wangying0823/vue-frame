@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <title>Vue架子</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <script type="text/javascript">
+      //WebIM
+      var WebIM = {};
+      //第三方表情包
+      WebIM.Emoji = {
+        path: 'static/images/qq/',
+        map: {
+          "[微笑]": "smiley_0.png",
+          "[撇嘴]": "smiley_1.png",
+          "[色]": "smiley_2.png",
+          "[发呆]": "smiley_3.png",
+          "[得意]": "smiley_4.png",
+          "[流泪]": "smiley_5.png",
+          "[害羞]": "smiley_6.png",
+          "[闭嘴]": "smiley_7.png",
+          "[睡]": "smiley_8.png",
+          "[大哭]": "smiley_9.png",
+          "[尴尬]": "smiley_10.png",
+          "[发怒]": "smiley_11.png",
+          "[调皮]": "smiley_12.png",
+          "[呲牙]": "smiley_13.png",
+          "[惊讶]": "smiley_14.png",
+          "[难过]": "smiley_15.png",
+          "[酷]": "smiley_16.png",
+          "[冷汗]": "smiley_17.png",
+          "[抓狂]": "smiley_18.png",
+          "[吐]": "smiley_19.png",
+          "[偷笑]": "smiley_20.png",
+          "[愉快]": "smiley_21.png",
+          "[白眼]": "smiley_22.png",
+          "[傲慢]": "smiley_23.png",
+          "[饥饿]": "smiley_24.png",
+          "[困]": "smiley_25.png",
+          "[惊恐]": "smiley_26.png",
+          "[流汗]": "smiley_27.png",
+          "[憨笑]": "smiley_28.png",
+          "[悠闲]": "smiley_29.png",
+          "[奋斗]": "smiley_30.png",
+          "[咒骂]": "smiley_31.png",
+          "[疑问]": "smiley_32.png",
+          "[虚]": "smiley_33.png",
+          "[晕]": "smiley_34.png",
+          "[疯了]": "smiley_35.png",
+          "[衰]": "smiley_36.png",
+          "[骷髅]": "smiley_37.png",
+          "[敲打]": "smiley_38.png",
+          "[再见]": "smiley_39.png",
+          "[擦汗]": "smiley_40.png",
+          "[抠鼻]": "smiley_41.png",
+          "[拍手]": "smiley_42.png",
+          "[糗大了]": "smiley_43.png",
+          "[坏笑]": "smiley_44.png",
+          "[左哼哼]": "smiley_45.png",
+          "[右哼哼]": "smiley_46.png",
+          "[哈气]": "smiley_47.png",
+          "[鄙视]": "smiley_48.png",
+          "[委屈]": "smiley_49.png",
+          "[快哭了]": "smiley_50.png",
+          "[阴险]": "smiley_51.png",
+          "[亲亲]": "smiley_52.png",
+          "[吓]": "smiley_53.png",
+          "[可怜]": "smiley_54.png",
+          "[菜刀]": "smiley_55.png",
+          "[西瓜]": "smiley_56.png",
+          "[啤酒]": "smiley_57.png",
+          "[篮球]": "smiley_58.png",
+          "[乒乓]": "smiley_59.png",
+          "[咖啡]": "smiley_60.png",
+          "[饭]": "smiley_61.png",
+          "[猪头]": "smiley_62.png",
+          "[玫瑰]": "smiley_63.png",
+          "[凋谢]": "smiley_64.png",
+          "[嘴唇]": "smiley_65.png",
+          "[爱心]": "smiley_66.png",
+          "[心碎]": "smiley_67.png",
+          "[蛋糕]": "smiley_68.png",
+          "[闪电]": "smiley_69.png",
+          "[炸弹]": "smiley_70.png",
+          "[刀]": "smiley_71.png",
+          "[足球]": "smiley_72.png",
+          "[瓢虫]": "smiley_73.png",
+          "[便便]": "smiley_74.png",
+          "[月亮]": "smiley_75.png",
+          "[太阳]": "smiley_76.png",
+          "[礼物]": "smiley_77.png",
+          "[拥抱]": "smiley_78.png",
+          "[强]": "smiley_79.png",
+          "[弱]": "smiley_80.png",
+          "[握手]": "smiley_81.png",
+          "[胜利]": "smiley_82.png",
+          "[抱拳]": "smiley_83.png",
+          "[勾引]": "smiley_84.png",
+          "[拳头]": "smiley_85.png",
+          "[差劲]": "smiley_86.png",
+          "[爱你]": "smiley_87.png",
+          "[NO]": "smiley_88.png",
+        }
+      };
+      WebIM.utils = {
+        parseEmoji:function(b){if("undefined"!==typeof WebIM.Emoji&&"undefined"!==typeof WebIM.Emoji.map){var f=WebIM.Emoji,g;for(g in f.map)if(f.map.hasOwnProperty(g))for(;-1<b.indexOf(g);)b=b.replace(g,'<img class="emoji" src="'+f.path+f.map[g]+'" />')}return b}
+      };
+      //全局protocol
+      var protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+      //设备检测
+      var userAgent = window.navigator.userAgent.toLowerCase();
+
+      function matchUA(needle) {
+        return userAgent.indexOf(needle) !== -1
+      }
+      //定义是否为ios
+      var isIOS = (!matchUA('windows') && matchUA('iphone')) || matchUA('ipod') || matchUA('ipad');
+      window.esConfig = {
+        model: "dev",//dev开发、test测试、st准生产、product生产
+        api: {
+        },
+        userAgent: navigator.userAgent,//浏览器
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
